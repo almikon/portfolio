@@ -1,10 +1,10 @@
-import Intro from "./components/intro";
+import Intro from "./components/Intro";
 
 const App = () => {
   return <div>
-  
+
     <Intro />
-  
+
   </div>;
 };
 

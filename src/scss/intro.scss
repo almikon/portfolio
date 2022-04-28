@@ -21,50 +21,60 @@ p {
     box-sizing: border-box;
 }
 
-.intro{
+.intro {
     display: flex;
     height: 100vh;
 
-    &__left{
+    &__left {
         flex: 1;
     }
-    &__right{
-        flex: 2;
+
+    &__right {
+        flex: 1;
     }
-    &__wrapper{
+
+    &__wrapper {
         padding: 50px;
     }
-    &__title{
+
+    &__title {
         height: 50px;
         overflow: hidden;
     }
-    &__item{
+
+    &__item {
         height: 50px;
         font-style: 30px;
         font-weight: bold;
-        color: greenyellow;
+        color: green;
         display: flex;
         align-items: center;
     }
-    &__wrapper{
+
+    &__wrapper {
         height: 100%;
         animation: move 10s ease-in-out infinite alternate;
     }
+
     @keyframes move {
-        25%{
+        25% {
             transform: translateY(-50px);
         }
-        50%{
+
+        50% {
             transform: translateY(-50px);
         }
-        75%{
+
+        75% {
             transform: translateY(-50px);
         }
-        100%{
+
+        100% {
             transform: translateY(-50px);
         }
     }
-    &__left-wrapper{
+
+    &__left-wrapper {
         padding: 50px;
         height: 50%;
         display: flex;
@@ -72,4 +82,3 @@ p {
         justify-content: space-between;
     }
 }
-
