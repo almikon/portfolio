@@ -5,6 +5,7 @@
 .intro {
     display: flex;
     height: 100vh;
+    font-size: 30px;
     &__left {
         flex: 1;
         display: flex;
@@ -19,9 +20,10 @@
         height: 50%;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
     &__title{
-        font-style: 30px;
+        font-style: 60px;
         font-weight: 300;
     }
     
@@ -62,6 +64,13 @@
         align-items: center;
     }
 
+    &__scroll{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        bottom: 20px;
+    }
+
     &__right {
         flex: 1;
         position: relative;
@@ -70,6 +79,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        position: absolute;
     }
     &__bg{
         clip-path: polygon(100% 0%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
@@ -77,6 +87,8 @@
         width: 100%;
         height: 100%;
         position: absolute;
+        top: 0;
+        right: 0;
     }
 
 }

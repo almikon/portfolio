@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/intro.css'
 import Photo from '../img/photo.png'
+import Scroll from '../img/scroll.svg'
 
 function Intro() {
   return (
@@ -20,15 +21,17 @@ function Intro() {
           </div>
           </div>
           <p className="intro__descr">
-            Prolific, front end web developer. Consistently receive high user experience scores for all web development projects. Passionate about building world class web applications in different buisness areas.
+            Prolific front end web developer. I consistently receive high user experience scores for all web development projects. Passionate about building world class web applications in different buisness areas.
           </p>
+          
         </div>
+        <img src={Scroll} alt="" className="intro__scroll" />
       </div>
       <div className="intro__right">
         
       <div className="intro__bg"></div>
         <div className="intro__right-img">
-          <img src={Photo} className="intro__img" />
+          <img src={Photo} alt="photo" className="intro__img" />
         </div>
       </div>
     </div>
