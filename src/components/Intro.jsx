@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/intro.css'
+import Photo from '../img/photo.png'
 
 function Intro() {
   return (
@@ -23,13 +24,13 @@ function Intro() {
           </p>
         </div>
       </div>
-      <div className="intro__right">right</div>
-      <div className="intro__right-wrapper">
+      <div className="intro__right">
+        
+      <div className="intro__bg"></div>
         <div className="intro__right-img">
-          <img src="../img/photo.png" alt="MEMEMEMMEMEME" className="intro__img" />
+          <img src={Photo} className="intro__img" />
         </div>
       </div>
-
     </div>
   )
 }
