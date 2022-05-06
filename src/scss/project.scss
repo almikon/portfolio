@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+}
+.project{
+    padding: 20px 10px;
+    margin: 10px 50px;
+    border: 2px solid rgb(243,242,242);
+    width: 25vw;
+    height: 30vh;
+    overflow: hidden;
+    &__browser{
+        margin: 0;
+        padding: 0;
+        position: sticky;
+        height: 20px;
+        background-color: rgb(243,242,242);
+
+    }
+}

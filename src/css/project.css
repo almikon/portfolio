@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+.project {
+  padding: 20px 10px;
+  margin: 10px 50px;
+  border: 2px solid #f3f2f2;
+  width: 25vw;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.project__browser {
+  margin: 0;
+  padding: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 20px;
+  background-color: #f3f2f2;
+}
+/*# sourceMappingURL=project.css.map */

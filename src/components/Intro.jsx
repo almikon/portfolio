@@ -25,13 +25,13 @@ function Intro() {
           </p>
           
         </div>
-        <img src={Scroll} alt="" className="intro__scroll" />
+        <img src={Scroll} alt="scroll down" className="intro__scroll" />
       </div>
       <div className="intro__right">
         
       <div className="intro__bg"></div>
         <div className="intro__right-img">
-          <img src={Photo} alt="photo" className="intro__img" />
+          <img src={Photo} alt='' className="intro__img" />
         </div>
       </div>
     </div>
