@@ -1,11 +1,11 @@
-import About from "./components/About";
+import Projects from "./components/Projects";
 import Intro from "./components/Intro";
 
 const App = () => {
   return <div>
 
     <Intro />
-    <About />
+    <Projects />
 
   </div>;
 };
