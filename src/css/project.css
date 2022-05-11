@@ -3,20 +3,21 @@
 }
 
 .project {
-  padding: 20px 10px;
-  margin: 10px 50px;
-  border: 2px solid #f3f2f2;
+  margin: 10px 20px;
   width: 25vw;
   height: 30vh;
   overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 21%;
+          flex: 1 0 21%;
+  border: 3px solid black;
+  border-radius: 20px 20px 0 0;
 }
 
 .project__browser {
-  margin: 0;
-  padding: 0;
   position: -webkit-sticky;
   position: sticky;
-  height: 20px;
-  background-color: #f3f2f2;
+  height: 30px;
+  background-color: #eaecee;
 }
 /*# sourceMappingURL=project.css.map */
