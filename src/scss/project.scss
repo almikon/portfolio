@@ -7,12 +7,21 @@
     height: 30vh;
     overflow: hidden;
     flex: 1 0 21%;
-    border: 3px solid black;
+    border: 3px solid lightgray;
     border-radius: 20px 20px 0 0;
     &__browser{
         position: sticky;
+        display: flex;
+        align-items: center;
         height: 30px;
         background-color: rgb(234, 236, 238);
 
     }
+}
+.p-circle{
+    background-color: white;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 3px;
 }

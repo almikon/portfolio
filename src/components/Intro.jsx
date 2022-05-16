@@ -9,8 +9,8 @@ function Intro() {
 
       <div className="intro__left">
         <div className="intro__left-wrapper">
-          <h2 className="intro__title">Hello, I'm a</h2>
-          <h1 className="intro__name">Junior Web Developer</h1>
+          <h2 className="intro__title"></h2>
+          <h1 className="intro__name">Web Developer</h1>
           <div className="intro__items">
           <div className="intro__items-wrapper">
             <div className="intro__item">HTML, SCSS, CSS</div>
