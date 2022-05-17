@@ -27,6 +27,10 @@
   background-color: #eaecee;
 }
 
+.project__img {
+  width: 100%;
+}
+
 .p-circle {
   background-color: white;
   border-radius: 50%;

@@ -1,18 +1,22 @@
-const projects = [
+import getRandomImage from './img/getRandomImage.jpg';
+import wordle from './img/wordle.jpg';
+import suot from './img/suot.jpg';
+
+export const projects_items = [
     {
         id: 1,
-        img:"./src/img/getRandomImage.jpg",
+        img:{getRandomImage},
         link:"https://abarakkadabra.github.io/randomImage/",
     },    
     {
         id: 2,
-        img:"./src/img/wordle.jpg",
+        img:{wordle},
         link:"https://abarakkadabra.github.io/wordle/",
     },    
     {
         id: 3,
-        img:"./src/img/suot.jpg",
+        img:{suot},
         link:"https://abarakkadabra.github.io/suot/main.html",
     }
 
-]
+];

@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/project.css'
 
-function Project() {
+function Project({img,link}) {
   return (
     <div className='project'>
         <div className="project__browser">
@@ -9,6 +9,9 @@ function Project() {
             <div className="p-circle"> </div>
             <div className="p-circle"> </div>
         </div>
+        <a href={link} target="_blank" rel="noreferrer">
+          <img src={img} alt="" className='project__img'/>
+        </a>
     </div>
   )
 }
