@@ -9,7 +9,6 @@ function Intro() {
 
       <div className="intro__left">
         <div className="intro__left-wrapper">
-          <h2 className="intro__title"></h2>
           <h1 className="intro__name">Web Developer</h1>
           <div className="intro__items">
           <div className="intro__items-wrapper">
