@@ -17,6 +17,7 @@
 .project__browser {
   position: -webkit-sticky;
   position: sticky;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,6 +30,13 @@
 
 .project__img {
   width: 100%;
+  -webkit-transition: all 5s ease;
+  transition: all 5s ease;
+}
+
+.project__img:hover {
+  -webkit-transform: translateY(-60%);
+          transform: translateY(-60%);
 }
 
 .p-circle {

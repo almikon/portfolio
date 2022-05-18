@@ -12,9 +12,7 @@ function Project({ img, link, desc }) {
       <a href={link} target="_blank" rel="noreferrer">
         <img src={img} alt="" className='project__img' />
       </a>
-      <div className="project__desc">
-        <h1>{desc}</h1>
-      </div>
+      
     </div>
   )
 }

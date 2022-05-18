@@ -1,0 +1,51 @@
+.contact {
+  height: 100vh;
+  position: relative;
+}
+
+.contact__background {
+  background-color: #59b256;
+  height: 100%;
+  width: 20px;
+  position: absolute;
+}
+
+.contact__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.contact__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.info {
+  margin: 20px;
+}
+
+.info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+  width: 70%;
+}
+
+.info__img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+/*# sourceMappingURL=contact.css.map */

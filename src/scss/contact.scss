@@ -1,0 +1,35 @@
+.contact{
+    height: 100vh;
+    position: relative;
+
+    &__background{
+        background-color: #59b256;
+        height: 100%;
+        width: 20px;
+        position: absolute;
+    }
+    &__wrapper{
+        display: flex;
+
+    }
+    &__right{
+        flex: 1;
+    }
+    &__left{
+        flex: 1;
+    }
+}
+.info{
+    margin: 20px;
+    &__item{
+        display: flex;
+        align-items: center;
+        margin: 50px 0;
+        width: 70%;
+    }
+    &__img{
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+    }
+}

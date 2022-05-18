@@ -11,6 +11,7 @@
     border-radius: 20px 20px 0 0;
     &__browser{
         position: sticky;
+        z-index: 2;
         display: flex;
         align-items: center;
         height: 30px;
@@ -19,6 +20,10 @@
     }
     &__img{
         width: 100%;
+        transition: all 5s ease;
+    }
+    &__img:hover{
+        transform: translateY(-60%);
     }
 }
 .p-circle{
