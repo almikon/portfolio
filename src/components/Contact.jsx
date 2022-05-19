@@ -1,9 +1,28 @@
 import React from 'react'
+import { useRef, useState } from 'react/cjs/react.production.min'
 import '../css/contact.css'
 import Email from '../img/email.png'
 import Phone from '../img/phone.png'
+import emailjs from 'emailjs-com'
 
 function Contact() {
+
+    const formRef = useRef()
+    const[done,setDone] = useState(false);
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_h5t9r39', 'template_1k4kuhg', formRef.current, 'ufayEw_47JGaGA92H')
+        .then((result) => {
+            console.log(result.text);
+            setDone(true);
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
+
+
   return (
     <div className='contact'>
         <div className="contact__background"></div>
@@ -24,12 +43,13 @@ function Contact() {
                     <b>What's your story?</b>
                     Feel free to send me any request you have. There are no small or big tasks I wouldn't be interested in. I'm looking forward to participate in your project.
                 </p>
-                <form action="submit">
+                <form ref={formRef} onSubmit={handleSubmit}>
                     <input type="Name" name="user_name" placeholder='Name'/>
                     <input type="Subject" name="user_subject" placeholder='Subject'/>
                     <input type="Email" name="user_email" placeholder='Email'/>
-                    <textarea name="user_text" placeholder='Message' id="user_text" rows="10" />
+                    <textarea name="message" placeholder='Message' id="user_text" rows="10" />
                     <button>Submit</button>
+                    {done && <p>Thank you for your request!</p>}
                 </form>
             </div>
         </div>
