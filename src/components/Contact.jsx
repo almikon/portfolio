@@ -1,15 +1,18 @@
 import React from 'react'
-import { useRef, useState } from 'react/cjs/react.production.min'
+import { useRef, useState } from 'react'
 import '../css/contact.css'
 import Email from '../img/email.png'
 import Phone from '../img/phone.png'
 import emailjs from 'emailjs-com'
+import { useContext } from 'react'
+import { ThemeContext } from './context'
 
 function Contact() {
 
     const formRef = useRef()
     const[done,setDone] = useState(false);
-
+    
+    const theme = useContext(ThemeContext)
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -44,10 +47,10 @@ function Contact() {
                     Feel free to send me any request you have. There are no small or big tasks I wouldn't be interested in. I'm looking forward to participate in your project.
                 </p>
                 <form ref={formRef} onSubmit={handleSubmit}>
-                    <input type="Name" name="user_name" placeholder='Name'/>
-                    <input type="Subject" name="user_subject" placeholder='Subject'/>
-                    <input type="Email" name="user_email" placeholder='Email'/>
-                    <textarea name="message" placeholder='Message' id="user_text" rows="10" />
+                    <input style={{backgroundColor: theme.state.darkTheme &&"#333"}} type="Name" name="user_name" placeholder='Name'/>
+                    <input style={{backgroundColor: theme.state.darkTheme &&"#333"}} type="Subject" name="user_subject" placeholder='Subject'/>
+                    <input style={{backgroundColor: theme.state.darkTheme &&"#333"}} type="Email" name="user_email" placeholder='Email'/>
+                    <textarea style={{backgroundColor: theme.state.darkTheme &&"#333"}} name="message" placeholder='Message' id="user_text" rows="10" />
                     <button>Submit</button>
                     {done && <p>Thank you for your request!</p>}
                 </form>
