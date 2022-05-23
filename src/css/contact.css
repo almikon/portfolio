@@ -38,6 +38,15 @@
           flex: 1;
 }
 
+@media (max-width: 560px) {
+  .contact__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .info {
   margin: 20px;
 }

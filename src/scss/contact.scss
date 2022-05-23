@@ -12,6 +12,7 @@
         display: flex;
 
     }
+
     &__right{
         flex: 1;
         display: flex;
@@ -23,6 +24,16 @@
         flex: 1;
     }
 }
+
+@media (max-width: 560px) {
+    .contact{
+        &__wrapper{
+        flex-direction: column;
+        }
+    }
+    
+}
+
 .info{
     margin: 20px;
     &__item{
