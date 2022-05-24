@@ -151,19 +151,26 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  __left-wrapper {
-    padding: 0 50px;
-    height: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .intro__left {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+  }
+  .intro__left-wrapper {
+    padding: 10px;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .intro__name {
+    margin-top: 50px;
+  }
+  .intro__descr {
+    display: none;
+  }
+  .intro__items {
+    font-size: 50px;
   }
 }
 /*# sourceMappingURL=intro.css.map */

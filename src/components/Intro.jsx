@@ -20,7 +20,7 @@ function Intro() {
           </div>
           </div>
           <p className="intro__descr">
-            Prolific front end web developer. I consistently receive high user experience scores for all web development projects. Passionate about building world class web applications in different buisness areas.
+            I'm a prolific front end web developer. I consistently receive high user experience scores for all web development projects. Passionate about building world class web applications in different buisness areas.
           </p>
           
         </div>

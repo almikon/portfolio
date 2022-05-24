@@ -32,7 +32,7 @@ function Contact() {
         <div className="contact__wrapper">
             <div className="contact__left">
                 <div className="info">
-                    <h1>Contact me:</h1>
+                    <div className="info__title"><h1>Contact me:</h1></div>
                     <div className="info__item">
                         <img src={Phone} alt="" className="info__img" />+7 999 010 11 00
                     </div>

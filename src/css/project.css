@@ -7,9 +7,6 @@
   width: 25vw;
   height: 30vh;
   overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 21%;
-          flex: 1 0 21%;
   border: 3px solid lightgray;
   border-radius: 20px 20px 0 0;
 }
@@ -37,6 +34,12 @@
 .project__img:hover {
   -webkit-transform: translateY(-60%);
           transform: translateY(-60%);
+}
+
+@media screen and (max-width: 560px) {
+  .project {
+    width: 40%;
+  }
 }
 
 .p-circle {
