@@ -44,13 +44,13 @@ function Contact() {
             <div className="contact__right">
                 <p className="contact__desc">
                     <b>What's your story?</b>
-                    Feel free to send me any request you have. There are no small or big tasks I wouldn't be interested in. I'm looking forward to participate in your project.
+                    <p>Feel free to send me any request you have. There are no small or big tasks I wouldn't be interested in. I'm looking forward to participate in your project.</p>
                 </p>
                 <form ref={formRef} onSubmit={handleSubmit}>
                     <input style={{backgroundColor: theme.state.darkTheme &&"#333"}} type="Name" name="user_name" placeholder='Name'/>
                     <input style={{backgroundColor: theme.state.darkTheme &&"#333"}} type="Subject" name="user_subject" placeholder='Subject'/>
                     <input style={{backgroundColor: theme.state.darkTheme &&"#333"}} type="Email" name="user_email" placeholder='Email'/>
-                    <textarea style={{backgroundColor: theme.state.darkTheme &&"#333"}} name="message" placeholder='Message' id="user_text" rows="10" />
+                    <textarea style={{backgroundColor: theme.state.darkTheme &&"#333"}} name="message" placeholder='Message' id="user_text" rows="10" /><br/>
                     <button>Submit</button>
                     {done && <p>Thank you for your request!</p>}
                 </form>
