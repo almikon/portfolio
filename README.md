@@ -1,1 +1,1 @@
-# Getting Started with Create React App
+Портфолио, в которое я буду добавлять свои учебные проекты.
