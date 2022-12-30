@@ -13,7 +13,6 @@ function Intro() {
             <div className="intro__item">Vanilla JS</div>
             <div className="intro__item">React JS</div>
             <div className="intro__item">Firebase</div>
-            <div className="intro__item">Node JS-FEAT</div>
           </div>
           </div>
           <span className="intro__descr">
