@@ -18,7 +18,7 @@ function Intro() {
           <span className="intro__descr">
             I'm a prolific front end web developer. I consistently receive high user experience scores for all web development projects. Passionate about building world class web applications in different buisness areas.
           </span>
-        
+          <div className='intro-hidden'></div>
         <Typer />
         <img src={Scroll} alt="scroll down" className="intro__scroll" />
     </div>
