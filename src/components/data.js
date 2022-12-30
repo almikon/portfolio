@@ -8,6 +8,7 @@ export const projects_items = [
         img: getRandomImage,
         link: "https://abarakkadabra.github.io/randomImage/",
         desc: "Get random image from the internet. You never know what you get next. Allows you to save and share the Image."
+        
     },
     {
         id: 2,
@@ -21,5 +22,4 @@ export const projects_items = [
         link: "https://abarakkadabra.github.io/suot/main.html",
         desc: "A responsive web site about labor protection."
     }
-
 ];

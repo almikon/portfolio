@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Toggle from "./components/Toggle";
 import { useContext } from "react";
 import { ThemeContext } from './components/context'
+import Intro1 from "./components/Intro1";
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -15,10 +16,9 @@ const App = () => {
     color: darkTheme && "white",
   }}>
     <Toggle />
-    <Intro />
+    <Intro1 />
     <Projects />
     <Contact />
-
   </div>;
 };
 

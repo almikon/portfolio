@@ -3,12 +3,12 @@
 }
 
 .project {
+  height: 60vh;
   margin: 10px 20px;
   width: 25vw;
-  height: 30vh;
   overflow: hidden;
   border: 3px solid lightgray;
-  border-radius: 20px 20px 0 0;
+  border-radius: 20px;
 }
 
 .project__browser {
@@ -27,13 +27,13 @@
 
 .project__img {
   width: 100%;
-  -webkit-transition: all 5s ease;
-  transition: all 5s ease;
+  opacity: 0.5;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
 }
 
 .project__img:hover {
-  -webkit-transform: translateY(-60%);
-          transform: translateY(-60%);
+  opacity: 1;
 }
 
 @media screen and (max-width: 560px) {
@@ -49,4 +49,10 @@
   width: 10px;
   margin: 3px;
 }
-/*# sourceMappingURL=project.css.map */
+
+.description{
+  z-index: 2;
+  font-size: small;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
