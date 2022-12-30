@@ -9,7 +9,7 @@ function Intro() {
           <h1 className="intro__name">Web Developer</h1>
           <div className="intro__items">
           <div className="intro__items-wrapper">
-            <div className="intro__item">HTML, SCSS, CSS</div>
+            <div className="intro__item main">HTML, SCSS, CSS</div>
             <div className="intro__item">Vanilla JS</div>
             <div className="intro__item">React JS</div>
             <div className="intro__item">Firebase</div>
