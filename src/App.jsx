@@ -1,10 +1,9 @@
 import Projects from "./components/Projects";
-import Intro from "./components/Intro";
 import Contact from "./components/Contact";
 import Toggle from "./components/Toggle";
 import { useContext } from "react";
 import { ThemeContext } from './components/context'
-import Intro1 from "./components/Intro1";
+import Intro from "./components/Intro";
 
 const App = () => {
   const theme = useContext(ThemeContext);
@@ -16,7 +15,7 @@ const App = () => {
     color: darkTheme && "white",
   }}>
     <Toggle />
-    <Intro1 />
+    <Intro />
     <Projects />
     <Contact />
   </div>;

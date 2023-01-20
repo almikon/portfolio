@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/typer.css'
+// import '../css/typer.css'
 import TypeWriterEffect from 'react-typewriter-effect';
 
 const Typer = () => {
