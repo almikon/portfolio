@@ -1,147 +1,76 @@
-.intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  font-size: 30px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.intro__left {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.content__wrapper {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
-.intro__name {
-  font-style: 60px;
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.intro__left-wrapper {
-  padding: 50px;
-  height: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.title {
+    font-size: 30px;
+    text-align: center;
 }
 
-.intro__title {
-  font-style: 60px;
-  font-weight: 300;
+.items_list {
+    height: 50px;
+    overflow: hidden;
+    margin: 10px;
+    align-items: center;
 }
 
-.intro__items {
-  height: 50px;
-  overflow: hidden;
-  margin: 10px;
-}
-
-.intro__items-wrapper {
-  height: 100%;
-  -webkit-animation: move 10s ease-in-out infinite alternate;
-          animation: move 10s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes move {
-  25% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  50% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  75% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
-  }
-}
-
-@keyframes move {
-  25% {
-    -webkit-transform: translateY(-50px);
-            transform: translateY(-50px);
-  }
-  50% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-  75% {
-    -webkit-transform: translateY(-150px);
-            transform: translateY(-150px);
-  }
-  100% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px);
-  }
-}
-
-.intro__item {
-  height: 50px;
-  font-style: 30px;
-  font-weight: bold;
-  color: #59b256;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.intro__scroll {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  bottom: 20px;
-}
-
-@media screen and (max-width: 560px) {
-  .intro {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .intro__left {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .intro__left-wrapper {
-    padding: 10px;
+.items-wrapper {
     height: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .intro__name {
-    margin-top: 50px;
-  }
-  .intro__descr {
-    display: none;
-  }
-  .intro__items {
-    font-size: 50px;
-  }
+    animation: move 10s ease-in-out infinite alternate;
+}
+  
+@keyframes move {
+    33% {
+        transform: translateY(-50px);
+    }
+    66% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(-150px);
+    }
+}
+
+.item {
+    height: 50px;
+    font-style: 30px;
+    font-weight: bold;
+    color: #59b256;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro_description{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 50px;
+}
+
+.intro_scroll{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.scroll_wrapper{
+    align-items: center;
 }
