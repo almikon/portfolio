@@ -1,10 +1,12 @@
 .project {
-  height: 60vh;
+  height: fit-content;
   margin: 10px 20px;
   width: 25vw;
   overflow: hidden;
   border: 3px solid lightgray;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project__browser {
@@ -47,8 +49,8 @@
 }
 
 .description{
-  z-index: 2;
   font-size: small;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
+  padding: 10px;
 }

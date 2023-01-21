@@ -5,7 +5,7 @@ import TypeWriterEffect from 'react-typewriter-effect';
 const Typer = () => {
     return (
         <>
-            <h3 class='typer'>
+            <h3 className='typer'>
             <TypeWriterEffect
         textStyle={{
           fontFamily: 'Monospace',

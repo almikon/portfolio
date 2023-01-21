@@ -1,8 +1,15 @@
 import Typer from "./Typer"
 import '../css/intro.css'
 import Scroll from '../img/scroll.svg'
+import ScrollWhite from '../img/scrollWhite.svg'
+import { useContext } from "react";
+import { ThemeContext } from "./context";
 
-const Intro1 = ()=> {
+const Intro = ()=> {
+
+    const theme = useContext(ThemeContext);
+    const darkTheme = theme.state.darkTheme;
+
     return (
             <div className="content__wrapper">
             <div className="content">
@@ -21,10 +28,10 @@ const Intro1 = ()=> {
                     I'm a prolific front end web developer. I consistently receive high user experience scores for all web development projects. Passionate about building world class web applications in different buisness areas.
                 </div>
                     <Typer />
-                    <img src={Scroll} alt="scroll down" className="intro_scroll" />
+                    <img src = {darkTheme ? ScrollWhite : Scroll } alt="scroll down" className="intro_scroll" />
             </div>
             </div>
     )
 }
 
-export default Intro1
+export default Intro
