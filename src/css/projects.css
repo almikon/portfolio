@@ -1,5 +1,4 @@
 .projects {
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,7 +16,6 @@
 
 .projects__list {
   margin-top: 30px;
-  max-height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +27,6 @@
 }
 
 .project {
-    min-height: 75vh;
     margin: 10px 20px;
     width: 25vw;
     overflow: hidden;

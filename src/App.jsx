@@ -9,7 +9,7 @@ const App = () => {
   const theme = useContext(ThemeContext);
   const darkTheme = theme.state.darkTheme;
 
-  return <div
+  return <div className="container"
   style={{
     backgroundColor: darkTheme ? "#222" : "white",
     color: darkTheme && "white",
