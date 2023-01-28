@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/project.css'
+import '../css/projects.css'
 
 function Project({ img, link, desc }) {
   return (
